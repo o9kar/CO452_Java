@@ -15,6 +15,9 @@ public class Week03
         System.out.println();
         System.out.println(" by Nicholas Day and Derek Peacock");
         System.out.println();
+
+        Student onkar = new Student(2136544, "Onkar");
+        onkar.print(); 
     }     
     
 }

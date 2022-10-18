@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Java Program",
+            "request": "launch",
+            "mainClass": ""
+        },
+        
+        {
+            "type": "java",
+            "name": "Launch Week03",
+            "request": "launch",
+            "mainClass": "Week3.Week03",
+            "projectName": "CO452_Java_2baa1b46"
+        }
+    ]
+}

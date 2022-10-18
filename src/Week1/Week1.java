@@ -16,8 +16,20 @@ public class Week1
         System.out.println();
         System.out.println(" by Nicholas Day and Derek Peacock");
         System.out.println();
-
+/*
         String name = InputReader.getString("Enter your name > ");
-        System.out.println("Hello " + name);
+        System.out.println("Hello " + name); 
+*/
+
+         int length = InputReader.getInt("enter length: ");
+         int height = InputReader.getInt("enter height: ");
+
+         int area = (length * height);
+         int perimeter = (length + height)*2;
+
+         System.out.println("Area is " + area);
+         System.out.println("Perimeter is " + perimeter);
+
+        
     } 
 }
