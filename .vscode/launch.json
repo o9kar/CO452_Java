@@ -1,18 +1,31 @@
 {
+    "version": "0.2.0",
     "configurations": [
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "CO452_Java_2baa1b46"
+        },
+        {
+            "type": "java",
+            "name": "Launch Week05",
+            "request": "launch",
+            "mainClass": "Week5.Week05",
+            "projectName": "CO452_Java_2baa1b46"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
         {
             "type": "java",
             "name": "Launch Java Program",
             "request": "launch",
             "mainClass": ""
-        },
-        
-        {
-            "type": "java",
-            "name": "Launch Week03",
-            "request": "launch",
-            "mainClass": "Week3.Week03",
-            "projectName": "CO452_Java_2baa1b46"
         }
     ]
 }

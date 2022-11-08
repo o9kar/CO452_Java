@@ -3,7 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Mario here.
  * 
- * @author (your name) 
+ * @author (ONKAR
+ * ) 
  * @version (a version number or a date)
  */
 public class Mario extends Actor

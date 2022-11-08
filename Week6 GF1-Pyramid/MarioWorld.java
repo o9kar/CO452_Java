@@ -12,7 +12,9 @@ public class MarioWorld extends World
 {
     public static final int MAXN_COLUMNS = 24;
     public static final int MAXN_ROWS = 20;
+    public static final int GROUND_ROW = 17;
     public static final int TILE_SIZE = 30; // pixels
+    
     
     private Mario mario;
     
@@ -42,8 +44,9 @@ public class MarioWorld extends World
      */
     private void drawPath()
     {
-        int yStart = MAXN_ROWS - 1; // 19
-        int yEnd = MAXN_ROWS - 2; // 18
+        int yStart = MAXN_ROWS - 2; // 19
+        int yEnd = MAXN_ROWS - 3; // 18
+    
         
         for(int y = yStart; y >= yEnd; y--)
         {
@@ -53,7 +56,8 @@ public class MarioWorld extends World
                 addObject(Block, x, y);
             }
         }
-    }
+    }  
+        
     
     /**
      * Ask the user to enter the size of the pyramid in
@@ -75,11 +79,29 @@ public class MarioWorld extends World
      */
     public void buildPyramid()
     {
-        int pyramidSize = getPyramidSize();
+        int size = getPyramidSize();
         
-        int x = 4; int y = 17;
-        Block Block = new Block();
-        addObject(Block, x, y);
-    }
+        int x = 4;
+        int y = GROUND_ROW;
+        int cols = size;
+        
+        //FIRST HALF
+        
+        for(int i=0; i < size; i++)
+        {
+            for(int side = 0; side < cols; side++)
+            {  
+                addObject(new Block(), x,y);
+                x++;
+            }
+            x = 4 +(i+1);
+            cols--;
+            y--;
+        }
+        
+        
+    }   
+    
+    
     
 }
